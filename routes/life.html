@@ -53,25 +53,40 @@
           <section class="card-view mb-8 fade-in">
             <div
               class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="display: flex; align-items: center; justify-content: space-between;"
             >
-              <div class="card-text w-1/2 p-6">
-                <h2 class="text-xl font-bold mb-4">1) Rajoharana ( Broom )</h2>
+              <!-- Text Section -->
+              <div class="card-text w-1/2 p-6" style="text-align: left;">
+                <h2 class="text-xl font-bold mb-4">1) Rajoharana (Broom)</h2>
                 <p class="text-gray-700">
-                  The rajoharana is a small broom made of soft natural fibers,
-                  such as cotton or peacock feathers, and is used to gently
-                  sweep the ground before walking or sitting. This action
-                  ensures no harm comes to even the smallest living beings that
-                  might otherwise go unnoticed. The broom not only prevents harm
-                  but also serves as a daily practice of mindfulness, reminding
-                  the ascetic of their commitment to non-violence
+                  The rajoharana is a small broom made of soft natural fibers, such as
+                  cotton or peacock feathers, and is used to gently sweep the ground
+                  before walking or sitting. This action ensures no harm comes to even
+                  the smallest living beings that might otherwise go unnoticed. The broom
+                  not only prevents harm but also serves as a daily practice of
+                  mindfulness, reminding the ascetic of their commitment to non-violence.
                 </p>
               </div>
-              <div class="card-image w-1/2">
+          
+              <!-- Image Section -->
+              <div
+                class="card-image w-1/2"
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  padding-right: 1.5rem;
+                "
+              >
                 <img
-                  src="../jain.png"
+                  src="../broom.png"
                   alt="Descriptive Alt Text"
-                  height="200px"
-                  width="200px"
+                  style="
+                    max-width: 100%;
+                    max-height: 250px;
+                    height: auto;
+                    object-fit: contain;
+                    border-radius: 8px;
+                  "
                 />
               </div>
             </div>
@@ -80,11 +95,11 @@
           <section class="card-view mb-8 fade-in">
             <div
               class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="display: flex; align-items: center; justify-content: space-between;"
             >
-              <div class="card-text w-1/2 p-6">
-                <h2 class="text-xl font-bold mb-4">
-                  2) Kamandalu/Patra (Water pot/bowl)
-                </h2>
+              <!-- Text Section -->
+              <div class="card-text w-1/2 p-6" style="text-align: left;">
+                <h2 class="text-xl font-bold mb-4">2) Kamandalu/Patra (Water pot/bowl)</h2>
                 <p class="text-gray-700">
                   The patra is a simple bowl used by ascetics during their daily
                   alms rounds. Typically made of metal, wood, or clay, it is
@@ -109,22 +124,59 @@
                   cupped hands.
                 </p>
               </div>
-              <div class="card-image w-1/2">
-                <img
-                  src="../jain.png"
-                  alt="Descriptive Alt Text"
-                  height="200px"
-                  width="200px"
-                />
-              </div>
+          
+                          <!-- Image Section -->
+              <div class="card-image w-1/2"
+              style="
+                display: flex;
+                flex-direction: column; /* Stack images vertically */
+                align-items: flex-end; /* Align images to the right */
+                gap: 1rem; /* Add spacing between the images */
+                padding-right: 1.5rem;
+              "
+            >
+              <img
+                src="../water pot.jpg"
+                alt="Water Pot"
+                style="
+                  max-width: 100%;
+                  max-height: 250px;
+                  height: auto;
+                  object-fit: contain;
+                  border-radius: 8px;
+                "
+              />
+              <img
+                src="../beggingbowl.png"
+                alt="Begging Bowl"
+                style="
+                  max-width: 100%;
+                  max-height: 250px;
+                  height: auto;
+                  object-fit: contain;
+                  border-radius: 8px;
+                "
+              />
+            </div>
             </div>
           </section>
 
           <section class="card-view mb-8 fade-in">
             <div
               class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
             >
-              <div class="card-text w-1/2 p-6">
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
                 <h2 class="text-xl font-bold mb-4">3) Scriptures</h2>
                 <p class="text-gray-700">
                   Some Jain ascetics may carry sacred texts for studying and
@@ -134,62 +186,105 @@
                   ascetic’s focus on wisdom and spiritual development.
                 </p>
               </div>
+          
+              <!-- Image Section -->
               <div class="card-image w-1/2">
                 <img
-                  src="../jain.png"
+                  src="../scriptures.jpeg"
                   alt="Descriptive Alt Text"
-                  height="200px"
-                  width="200px"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
                 />
               </div>
             </div>
           </section>
+        </section>
 
-          <section class="card-view mb-8 fade-in">
-            <div
-              class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
-            >
-              <div class="card-text w-1/2 p-6">
-                <h2 class="text-xl font-bold mb-4">4) Clothing</h2>
-                <p class="text-gray-700">
-                  The clothing of Jain ascetics varies between the Śvētāmbara
-                  and Digambara traditions:
-                </p>
-                <p class="highlight fade-in">
-                  <strong>Śvētāmbara Clothing:</strong> Śvētāmbara ascetics wear
+        <section class="card-view mb-8 fade-in">
+          <div
+            class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+            style="display: flex; align-items: center; justify-content: space-between;"
+          >
+            <!-- Text Section -->
+            <div class="card-text w-1/2 p-6" style="text-align: left;">
+              <h2 class="text-xl font-bold mb-4">4) Clothing</h2>
+              <p class="highlight fade-in">
+                <strong>Śvētāmbara Clothing:</strong> Śvētāmbara ascetics wear
                   simple, unstitched white garments, symbolizing purity and
                   detachment. This attire is minimal and purely functional,
                   reflecting their renunciation of material attachments.
-                </p>
-                <p class="highlight fade-in">
-                  <strong>Digambara Clothing:</strong> Digambara monks renounce
+              </p>
+              <p class="highlight fade-in">
+                <strong>Digambara Clothing:</strong> Digambara monks renounce
                   clothing altogether, embracing complete nudity as a
                   demonstration of their detachment from material possessions
                   and their adherence to the ideal of total non-possessiveness.
-                </p>
-                <p class="text-gray-700">
-                  A small piece of cloth called a muhapatti is often used by
-                  Śvētāmbara ascetics to cover the mouth. This prevents harm to
-                  airborne microorganisms and serves as a constant reminder of
-                  the vow of non-violence in speech.
-                </p>
-              </div>
-              <div class="card-image w-1/2">
-                <img
-                  src="../jain.png"
-                  alt="Descriptive Alt Text"
-                  height="200px"
-                  width="200px"
-                />
-              </div>
+              </p>
+              <p class="text-gray-700">
+                A small piece of cloth called a muhapatti is often used by
+                Śvētāmbara ascetics to cover the mouth. This prevents harm to
+                airborne microorganisms and serves as a constant reminder of
+                the vow of non-violence in speech.
+              </p>
             </div>
-          </section>
+        
+                        <!-- Image Section -->
+            <div class="card-image w-1/2"
+            style="
+              display: flex;
+              flex-direction: column; /* Stack images vertically */
+              align-items: flex-end; /* Align images to the right */
+              gap: 1rem; /* Add spacing between the images */
+              padding-right: 1.5rem;
+            "
+          >
+            <img
+              src="../clothing.png"
+              alt="Water Pot"
+              style="
+                max-width: 100%;
+                max-height: 250px;
+                height: auto;
+                object-fit: contain;
+                border-radius: 8px;
+              "
+            />
+            <img
+              src="../muhpatti.png"
+              alt="Begging Bowl"
+              style="
+                max-width: 100%;
+                max-height: 250px;
+                height: auto;
+                object-fit: contain;
+                border-radius: 8px;
+              "
+            />
+          </div>
+          </div>
+        </section>
 
           <section class="card-view mb-8 fade-in">
             <div
               class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
             >
-              <div class="card-text w-1/2 p-6">
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
                 <h2 class="text-xl font-bold mb-4">5) Dandaka (Staff)</h2>
                 <p class="text-gray-700">
                   Some ascetics carry a dandaka, a simple staff used for balance
@@ -200,12 +295,19 @@
                   steady path to spiritual liberation.
                 </p>
               </div>
+          
+              <!-- Image Section -->
               <div class="card-image w-1/2">
                 <img
-                  src="../jain.png"
+                  src="../dandaka.jpg"
                   alt="Descriptive Alt Text"
-                  height="200px"
-                  width="200px"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
                 />
               </div>
             </div>
@@ -213,93 +315,291 @@
         </section>
 
         <section class="new-insights mt-8">
-          <h2 class="section-title text-2xl mb-4"></h2>
+          <h2 class="section-title text-2xl mb-4">Daily Routine and Spiritual Practices
+          </h2>
+          <p class="fade-in">
+            Jain ascetics follow a strict daily routine that helps them maintain spiritual focus and discipline. 
+            Their life is highly regulated, with every moment spent in the pursuit of self-purification and non-attachment.
+          </p>
 
           <p class="highlight fade-in">
-            Jain ascetics lead a life of profound simplicity, relying on a few
-            essential items that hold deep spiritual and symbolic significance.
-            Each possession aligns with the principles of Jainism, particularly
-            ahimsa (non-violence), aparigraha (non-possessiveness), and
-            mindfulness, emphasizing the ascetic’s detachment from material
-            desires.
+            <strong>Meditation and Prayers:</strong> The day begins before dawn with meditation (dhyana) and prayers. 
+            The early morning is considered the best time for spiritual activities due to its peaceful and tranquil nature. 
+            The ascetics meditate on the impermanence of life, focusing their thoughts on achieving liberation. 
+            Prayers to the Tirthankaras (spiritual teachers) and recitations of mantras are also a part of the morning rituals.
           </p>
           <p class="highlight fade-in">
-            <strong>Living truthfully:</strong> Jainism extends the idea of
-            Satya to all aspects of life, including actions and thoughts. This
-            holistic approach to truthfulness—being true not only in words but
-            also in intentions and deeds—challenged me to reflect on the
-            alignment between my inner values and outward behavior.
+            <strong>Fasting:</strong> Jain ascetics practice fasting as an essential spiritual discipline. 
+            Fasting is believed to purify the body and mind, removing negative karmas. 
+            There are different levels of fasting, ranging from partial fasting (where certain foods are avoided) 
+            to complete fasting (where no food is consumed for a specific period). On days of fasting, ascetics may 
+            restrict their intake of food to certain items, such as fruits, and avoid consuming any food after sunset.
           </p>
+          <p class="highlight fade-in">
+            <strong>Dietary Restrictions:</strong> Jain ascetics follow a strict vegetarian diet, avoiding any food that involves the harm or killing of living beings. The food they eat is simple, often consisting of fruits, vegetables, and grains that have been prepared with utmost care to avoid harming any life. For instance:
+            <ul><li>They do not consume root vegetables (like onions, garlic, potatoes) because harvesting these often kills the plant.</li>
+            <li>The food must be prepared without harming any life, and only food that has been offered to them through the practice of alms (bhiksha) is accepted.</li>
+          <li>They avoid fermented foods, as fermentation is believed to harbor small life forms.</li></ul>
+          </p>
+          <p class="highlight fade-in">
+            <strong>Bhiksha:</strong> One of the most significant aspects of a Jain ascetic’s life is the practice of begging for food. 
+          They do not cook for themselves or accept food from a family member or close acquaintance, as doing 
+          so would create attachments. Instead, they go from house to house, asking for food, which symbolizes 
+          their detachment from worldly comforts. The food they receive is taken only if it is offered with respect 
+          and out of generosity. The act of begging fosters humility and reinforces their renunciation of material wealth 
+          and desires.
+        </p>
+        <p class="highlight fade-in">
+          <strong>Silence (Mauna):</strong> Many Jain ascetics practice silence for a significant part of their day. 
+          Silence, known as mauna, helps them control their speech, which is considered a powerful tool 
+          that can either harm or help others. Ascetics practice silence to avoid causing harm with their 
+          words and to maintain a state of inner peace and self-reflection. This practice is also essential for 
+          focusing their mind on spiritual growth and meditation.
+
+      </p>
         </section>
 
         <section class="perspective mt-8">
           <h2 class="section-title text-2xl mb-4">
-            A New Perspective on Himsa
+            Living Arrangements
           </h2>
-          <p class="fade-in">
-            In a guest lecture, Nishi Shah shared a thought-provoking example
-            that reshaped my understanding of Satya, or truth. She described a
-            situation in which a monk is in a forest, and a hunter approaches
-            him, asking if he has seen a deer pass by. The monk, instead of
-            giving a direct answer, chooses to remain silent. Dr. Shah explained
-            that the monk’s silence was a deliberate choice to uphold Satya in
-            the most compassionate way. By staying silent, the monk avoids
-            lying, yet he also prevents the potential harm that could come to
-            the deer if its whereabouts were disclosed. This example made me
-            realize that Satya isn't always about speaking the truth aloud.
-            Sometimes, the most truthful and compassionate response is to
-            withhold information that could cause harm, showing that truth must
-            be balanced with non-violence (Ahimsa). This insight deepened my
-            understanding of how truth can be practiced not just through words
-            but through actions that protect and preserve life.
+          <p class="highlight fade-in">
+            <strong>Nomadic Lifestyle:</strong>
+            A Jain ascetic's life is typically nomadic, meaning they do not stay in one place for more than one night. 
+            They travel from town to town, village to village, seeking alms and engaging in spiritual practices. 
+            This lifestyle reinforces the principle of detachment, as ascetics do not form lasting attachments  
+            to any place, person, or community.
+
+          </p>
+          <p class="highlight fade-in">
+            <strong>Caturmas (Rainy Season Retreat):</strong>
+            During the rainy season, known as Caturmas, Jain ascetics follow a different practice. 
+            The Caturmas lasts for about four months (typically July to October), 
+            during which ascetics refrain from traveling. The reason for this is to prevent the inadvertent 
+            harm to small insects or creatures that might be killed while walking or traveling through the fields 
+            during the rains. During Caturmas, ascetics settle in one place and remain there for the entire period. 
+            <br>
+            While staying in one location during Caturmas, ascetics engage in more intensive meditation, prayer, and 
+            study of the scriptures. The practice also helps them deepen their connection with their fellow 
+            ascetics and the community they are staying with. This period of staying in one place symbolizes a temporary 
+            retreat for reflection and self-purification.
+
+
           </p>
         </section>
 
         <section class="admiration mt-8">
-          <h2 class="section-title text-2xl mb-4">What I Admired</h2>
+          <h2 class="section-title text-2xl mb-4">Behavior and Conduct</h2>
+          <p class="fade-in">
+            Jain ascetics follow the five great vows, which are the foundation of their moral conduct:
+          </p>
           <div class="highlight fade-in">
-            <p>
-              What stood out to me about Satya is that it’s not just about
-              telling the truth but also about speaking with kindness and care.
-              Jainism teaches that truth should never harm others, and this idea
-              gave me a new perspective on how I communicate. It’s not enough to
-              just be honest; the way we say things matters too
-            </p>
-            <p>
-              I admired how Satya encourages people to live with integrity—not
-              just in their words but in their actions. It’s about being genuine
-              and making sure that our thoughts, words, and deeds align. This
-              approach doesn’t just help us stay true to ourselves but also
-              builds trust and stronger relationships with others.
-            </p>
-            <p>
-              Learning about Satya has inspired me to be more thoughtful in my
-              daily life. Whether I’m giving feedback, resolving a disagreement,
-              or just talking with friends, I now try to make sure that my
-              honesty is paired with compassion. This balance between truth and
-              care has made my interactions more meaningful and positive.
-            </p>
+            <ul>
+            <li><strong>Ahimsa (Non-violence):</strong> The ascetics take great care to avoid harming any living being, 
+            whether it be through thought, speech, or action.</li>
+          <li><strong>Satya (Truthfulness):</strong> They speak only the truth and avoid harmful gossip or lying.</li>
+         <li><strong></strong>Asteya (Non-stealing): Jain ascetics do not take anything that is not freely given to them. 
+          This includes not accepting any food or possessions unless offered in the spirit of charity.</li>
+        <li><strong>Brahmacharya (Celibacy):</strong> Ascetics practice celibacy, avoiding any form of sexual activity. 
+          This vow helps them conserve their energy for spiritual practice.</li>
+        <li><strong>Aparigraha (Non-possessiveness):</strong> Ascetics own as little as possible, living with extreme simplicity 
+          and detachment from material possessions.</li>
+</ul>
           </div>
         </section>
 
-        <section class="card-view mb-8 fade-in">
-          <div class="card bg-white shadow-lg rounded-lg overflow-hidden flex">
-            <div class="card-text w-1/2 p-6">
-              <h2 class="text-xl font-bold mb-4">Card Title</h2>
-              <p class="text-gray-700">
-                This section contains a detailed description related to the
-                image. It provides insights and context to help the viewer
-                understand the visual content more effectively.
-              </p>
+        <section class="perspective mt-8">
+          <h2 class="section-title text-2xl mb-4">
+            Tapas: The Mortification of the Body in Jainism
+          </h2>
+          <p class="fade-in">
+            <strong>Tapas </strong>
+            in Jainism, derived from the Sanskrit root TAP (meaning "to heat" or "to suffer"), 
+            is a spiritual and physical discipline aimed at purifying the soul, eliminating karma, 
+            and achieving moksha (liberation). It is not merely self-mortification but a transformative process, 
+            viewed as burning away impurities through intense spiritual and physical practices.
+          </p>
+        </section>
+
+        
+
+        <section class="perspective mt-8">
+          <h2 class="section-title text-2xl mb-4">
+            Forms of Tapas
+          </h2>
+          <p class="fade-in">
+            The life of a Jain ascetic often involves severe physical austerities that test the limits of endurance 
+            and demonstrate unparalleled commitment to the spiritual path. Here are some notable forms of 
+            Tapas, as shared by the instructor:
+          </p>
+
+          section class="card-view mb-8 fade-in">
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
+            >
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
+                <h2 class="text-xl font-bold mb-4">Jal Tapas</h2>
+                <p class="text-gray-700">
+                  In this form of austerity, the ascetic meditates under a leaking pot of cold water, 
+                  often on extremely cold days. This practice signifies resilience and a willingness to 
+                  endure discomfort while maintaining inner calm and focus.
+
+                </p>
+              </div>
+          
+              <!-- Image Section -->
+              <div class="card-image w-1/2">
+                <img
+                  src="../JalTap.jpg"
+                  alt="Descriptive Alt Text"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
+                />
+              </div>
             </div>
-            <div class="card-image w-1/2">
-              <img
-                src="../jain.png"
-                alt="Descriptive Alt Text"
-                class="w-full h-full object-cover"
-              />
+          </section>
+
+
+          <section class="card-view mb-8 fade-in">
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
+            >
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
+                <h2 class="text-xl font-bold mb-4">Dhuni Tapas</h2>
+                <p class="text-gray-700">
+                  Here, the ascetic meditates amidst fire or under the blazing sun, often on scorching hot days. 
+                  This practice requires exceptional endurance and signifies the burning away of karmic 
+                  impurities through suffering.
+
+                </p>
+              </div>
+          
+              <!-- Image Section -->
+              <div class="card-image w-1/2">
+                <img
+                  src="../DhuniTap.jpg"
+                  alt="Descriptive Alt Text"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
+                />
+              </div>
             </div>
-          </div>
+          </section>
+
+          <section class="card-view mb-8 fade-in">
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
+            >
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
+                <h2 class="text-xl font-bold mb-4">Urdhvabahu</h2>
+                <p class="text-gray-700">
+                  The ascetic holds one or both arms aloft for extended periods, sometimes for years, 
+                  as an act of devotion and penance. The body undergoes significant transformation, 
+                  including the withering of unused limbs, which becomes a testament to the ascetic's resolve.
+
+                </p>
+              </div>
+          
+              <!-- Image Section -->
+              <div class="card-image w-1/2">
+                <img
+                  src="../Urdhvabahu.jpg"
+                  alt="Descriptive Alt Text"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="card-view mb-8 fade-in">
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden flex"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                gap: 1rem;
+              "
+            >
+              <!-- Text Section -->
+              <div
+                class="card-text w-1/2"
+                style="text-align: left; padding-right: 1rem;"
+              >
+                <h2 class="text-xl font-bold mb-4">Kareshvari</h2>
+                <p class="text-gray-700">
+                  In this form, the ascetic meditates while standing on one leg, often
+                  for long durations. This posture induces physical strain and pain,
+                  testing the ascetic's ability to remain focused and detached.
+                </p>
+              </div>
+          
+              <!-- Image Section -->
+              <div class="card-image w-1/2">
+                <img
+                  src="../Kareshvari.jpg"
+                  alt="Descriptive Alt Text"
+                  style="
+                    max-width: 100%;
+                    height: 250px;
+                    border-radius: 8px;
+                    display: block;
+                    margin: 0 auto;
+                  "
+                />
+              </div>
+            </div>
+          </section>
         </section>
 
         <div class="btn-container" style="text-align: center; margin-top: 30px">

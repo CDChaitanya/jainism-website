@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="../assets/css/vowes.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f3;
+    }
+
+    .flashcard-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30rem;
+      height: 28rem;
+    }
+
+    .card-wrapper {
+       width: 35rem; 
+       height: 25rem; 
+       perspective: 1000px;
+       position: relative;
+       overflow: hidden;
+       border-radius: 1rem;
+       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       transition: transform 0.6s;
+       transform-style: preserve-3d;
+       border-radius: 1rem;
+       background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    }
+
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .card-front {
+      background-color: #ffffff;
+    }
+
+    .card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 1rem;
+    }
+
+    .card-back {
+      background-color: #ffffff;
+      padding: 1rem;
+      box-sizing: border-box; 
+      overflow: hidden; 
+      transform: rotateX(180deg);
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+      border-radius: 1rem;
+      box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .card-back p {
+      position: relative;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0;
+      padding: 1rem; 
+      box-sizing: border-box; 
+      text-align: justify; 
+      word-wrap: break-word; 
+      overflow-wrap: break-word;
+    }
+
+    .card-wrapper:hover .card-body {
+      transform: rotateX(180deg);
+    }
+
+    .navigator {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .navigator button {
+      background: #007BFF;
+      border: none;
+      font-size: 1.5rem;
+      color: #fff;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .navigator button:disabled {
+      background: #d1d1d1;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .navigator button:hover:not(:disabled) {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="flashcard-container">
+    <div class="card-wrapper">
+      <div class="card-body">
+        <div class="card-front">
+          <img src="../digambaraascetic.jpg" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <p>Description for Image 1</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigator">
+      <button id="prev" onclick="navigate(-1)">&#8592;</button>
+      <button id="next" onclick="navigate(1)">&#8594;</button>
+    </div>
+    <div class="btn-container" style="text-align: center; margin-top: 30px">
+        <a href="../index.html" class="btn btn-primary"> Back to Home </a>
+      </div>
+  </div>
+
+  <script>
+    const flashcards = [
+      { front: '../digambaraascetic.jpg', back: 'Digambara ascetics symbolize total renunciation, living without possessions or clothing to signify detachment from materialism. They carry a kamandalu (water pot), which represents purity and the importance of maintaining spiritual cleanliness. The broom, called Rajoharana, prevents harm to even the smallest life forms.' },
+      { front: '../svetambarasadhvis.jpg', back: 'Svetambara nuns, dressed in simple white sarees, embody the principles of purity, humility, and non-violence. They carry a muhpatti (cotton fibre broom), which reflects their commitment to protecting all forms of life, ensuring they do not harm even the tiniest creatures as they walk. Their white attire signifies detachment from worldly possessions and their focus on spiritual liberation.' },
+      { front: '../kayotsarga.jpg', back: 'This statue of Bahubali in the Kayotsarga posture represents total renunciation and self-discipline. The pose, which translates to "letting go of the body," reflects the Jain philosophy of detachment. The symmetrical veils on his hands symbolize the harmony of nature and spirituality, illustrating how true enlightenment follows a path of balance and order. This statue embodies serenity, spiritual mastery, and the journey toward liberation.' },
+      { front: '../Parshvanatha.jpg', back: 'This image depicts Parshvanatha, the 23rd Tirthankara, seated in the Padmāsana posture, symbolizing deep meditation and spiritual serenity. The Padmāsana, or "lotus seat," represents the state of inner peace and balance. Above his head, a serpent with multiple hoods is shown, symbolizing protection and divine energy. The snake is often associated with Parshvanatha, representing his spiritual power and mastery over the elements. This serene representation reflects his detachment from worldly desires and his pursuit of enlightenment.' },
+      { front: '../tapas.png', back: 'This image depicts Jain ascetic practicing tapas, a spiritual discipline involving self-mortification, meditation, and austerity. These practices are central to Jainism\'s path of liberation, symbolizing renunciation, self-control, and detachment. The ascetic is shown in various poses, reflecting the diverse forms of tapas that aid in spiritual purification and the pursuit of enlightenment.' }
+      // Add more flashcards here
+    ];
+
+    let currentIndex = 0;
+
+    function renderFlashcard() {
+      const cardWrapper = document.querySelector('.card-wrapper');
+      const front = cardWrapper.querySelector('.card-front img');
+      const back = cardWrapper.querySelector('.card-back p');
+
+      front.src = flashcards[currentIndex].front;
+      back.textContent = flashcards[currentIndex].back;
+
+      document.getElementById('prev').disabled = currentIndex === 0;
+      document.getElementById('next').disabled = currentIndex === flashcards.length - 1;
+    }
+
+    function navigate(direction) {
+      currentIndex += direction;
+      renderFlashcard();
+    }
+
+    // Initialize
+    renderFlashcard();
+  </script>
+</body>
+</html>
