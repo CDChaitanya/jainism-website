@@ -120,7 +120,7 @@ body { background: var(--white); }
 .container { padding-inline: 15px; }
 
 .w-100 { width: 100%; }
-.w-75 { width: 100%; }
+.w-80 { width: 80%; }
 
 .h1,
 .h2,
