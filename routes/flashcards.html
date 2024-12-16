@@ -15,13 +15,21 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #eef2f3;
     }
-
+    .container {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
     .flashcard-container {
       display: flex;
       flex-direction: column;
+      text-align: center;
+      justify-content: center;
       align-items: center;
-      width: 30rem;
-      height: 28rem;
     }
 
     .card-wrapper {
@@ -134,6 +142,8 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1 class="text-4xl text-center mb-6 fade-in">Jainism Flashcards</h1>
   <div class="flashcard-container">
     <div class="card-wrapper">
       <div class="card-body">
@@ -151,7 +161,14 @@
       <button id="next" onclick="navigate(1)">&#8594;</button>
     </div>
   </div>
-
+  <footer class="footer-bottom">
+    <div class="container">
+      <p class="copyright">
+        © 2024 introduction-to-jainism. All Rights Reserved. Images sourced from the REL 495 presentation by Anna Tosato.
+      </p>
+    </div>
+  </footer>
+</div>
   <script>
     const flashcards = [
       { front: '../digambaraascetic.jpg', back: 'This image shows a Digambara monk walking, symbolizing his complete renunciation and detachment from material possessions. He carries a kamandalu (water pot), reflecting his simple and humble lifestyle. The broom, known as Rajoharana, is used to gently sweep the ground as he walks, preventing harm to even the smallest living beings. His lack of clothing signifies his commitment to living a life free from material attachment and worldly desires.' },
